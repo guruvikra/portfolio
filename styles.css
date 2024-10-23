@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for overall page */
+    color: #333; /* Dark text for readability */
+}
+
+header {
+    background: #2c3e50; /* Darker blue-gray for the header */
+    color: #ffffff; /* White text for contrast */
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin: 20px; /* Space around header */
+    position: relative; /* Positioning context for text shadow */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adds depth to the main title */
+}
+
+header p {
+    margin: 5px 0;
+    color: #e0e0e0; /* Lighter gray for better readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for contrast */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #1abc9c; /* Teal for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e67e22; /* Orange on hover for emphasis */
+}
+
+
+h2 {
+    border-bottom: 3px solid #1abc9c; /* Teal accent for headers */
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff; /* White for inner content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-me {
+    background: #ecf0f1; /* Light background for about section */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #34495e; /* Darker text for better readability */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 15px;
+    background: #d5dbdb; /* Light gray for skill cards */
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s;
+    color: #333; /* Dark text */
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Raise effect on hover */
+}
+
+.projects-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 10px 0; /* Padding for scroll area */
+    scroll-snap-type: x mandatory; /* Enables snap scrolling */
+}
+
+.project-card {
+    flex: 0 0 auto; /* Prevents shrinking */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background: #2c3e50;; /* Bright blue for project cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    width: 300px; /* Fixed width for cards */
+    transition: transform 0.2s;
+    scroll-snap-align: start; /* Snap alignment for scrolling */
+    color: #ffffff; /* White text for readability */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.project-link {
+    color: #1abc9c; /* White for project links */
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: #2c3e50; /* Darker blue-gray for footer */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners */
+}
+
+footer a {
+    color: #1abc9c; /* Teal for footer links */
+    text-decoration: none; /* No underline by default */
+}
+
+footer a:visited {
+    color: #1abc9c; /* Retain the same color when visited */
+}
+
+footer a:hover {
+    color: #e67e22; /* Orange on hover for emphasis */
+    text-decoration: underline; /* Underline only on hover */
+}
